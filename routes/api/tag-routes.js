@@ -41,8 +41,6 @@ router.post("/", async (req, res) => {
   const tagInfo = await Tag.create(req.body)
   .catch((err) => {
     res.json(err);
-  }).catch((err) => {
-    res.json(err);
   });
   res.json(tagInfo);
 });
